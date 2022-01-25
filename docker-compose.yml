@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+        src:
+                image: node:17.4-buster
+                working_dir: /app
+                command: "tail -f /dev/null"
+                ports:
+                        - "3000:3000"
+                volumes:
+                        - ./:/app
